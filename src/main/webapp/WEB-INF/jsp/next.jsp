@@ -3,7 +3,7 @@
 </head>
 <body>
 <p>
-    <span>${valueTest}</span>
+    <span>${attr1}</span>
 </p>
 </body>
 </html>

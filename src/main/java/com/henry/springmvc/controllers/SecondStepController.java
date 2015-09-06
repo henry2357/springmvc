@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class nextController {
-	Logger logger = LoggerFactory.getLogger(nextController.class);
+public class SecondStepController {
+	Logger logger = LoggerFactory.getLogger(SecondStepController.class);
 
 	@RequestMapping(value = "next.do", method = RequestMethod.GET)
 	public String render(Model model,
 						 HttpSession session) {
-		logger.warn("nextController:render()");
-		String value = (String)session.getAttribute("attr1");
-		model.addAttribute("valueTest", value);
+		logger.info("nextController:render()");
+
 		return "next";
 	}
 }
